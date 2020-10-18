@@ -1,0 +1,10 @@
+
+funtion factorialize (num){
+  var answer = 1;
+  for (var i=2; i<= num; i++){
+    answer=answer * i
+  }
+  return answer;
+}
+
+console.log(factorialize(3));
