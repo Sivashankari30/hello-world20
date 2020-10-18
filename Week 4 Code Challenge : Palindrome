@@ -1,0 +1,16 @@
+function palindrome (str){
+  var answer = "";
+  var tempString = "";
+  //Filter  out anytging other than a-z
+  for (var i=0; i< str.length; i++){
+    if (str.toUpperCase().charCodeAt(i) < 91 || str.charCodeAt(i) > 47 && str.charCodeAt (i) < 58) {
+      tempString +=str.charAt(i).toUpperCase()
+    }
+  }
+
+
+answer = tempString.split("").reverse().join("") if (answer == tempString) {
+  return true;
+}
+ return false;
+}
